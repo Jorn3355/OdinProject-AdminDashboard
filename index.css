@@ -12,24 +12,31 @@ body {
 
 aside {
     display: inline-grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr; ;
     padding: 1rem;
     grid-area: 1/1/-1/1;
     background: #0F8AD8;
+    z-index: 2;
 }
 
 header {
     display: flex;
-    color: white;
-    box-shadow: 10px 5px 5px 3px;
+    flex-flow: column wrap;
+    box-shadow: 1px 2px 8px 0 #00000044;
     grid-area: 1/2/1/2;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    z-index: 1;
 }
 
 main {
     display: grid;
     grid-area: 2/2/2/2;
     grid-template-columns: repeat(3, 1fr);
+    background: #e2e8f0; 
+}
+
+h3 {
+    display: inline;
 }
 
 .sideHeader {
@@ -48,23 +55,31 @@ main {
     margin: 1.5rem 0;
 }
 
-.wrapper {
-    min-width: 100%;
-    max-height: 50%;
-}
-
 .sideContent {
     width: 15%;
-    margin-right: 15px;
+    margin-right: 1rem;
     filter: invert(95%) sepia(0%) saturate(20%) hue-rotate(34deg) brightness(104%) contrast(108%);
+}
+
+.upperHeader, .bottomHeader {
+    width: 100%;
+    max-height: 50%;
+    display: flex;
+    align-items: center;      
+}
+
+.headerContent {
+    width: 2.5%;
+    margin-right: 35px;
+}
+
+.pfp1 {
+    width: 5%;
+    min-height: 75%;
 }
 
 .logo {
     width: 20%;
-}
-
-.link {
-    font-size: 1.5rem;
 }
 
 #upper {
@@ -76,9 +91,10 @@ main {
 }
 
 #search {
-    max-height: 25%;
-    background: #d3d3d3;
+    min-height: 50%;
+    background: #e2e8f0;
     min-width: 55%;
     border-radius: 1rem;
-    margin-top: 0.25rem;
+    border: none;
+    margin-right: 135px;
 }
