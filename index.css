@@ -39,6 +39,11 @@ h3 {
     display: inline;
 }
 
+span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 .sideHeader {
     grid-row: 1/2
 }
@@ -63,7 +68,7 @@ h3 {
 
 .upperHeader, .bottomHeader {
     width: 100%;
-    max-height: 50%;
+    min-height: 50%;
     display: flex;
     align-items: center;      
 }
@@ -73,13 +78,41 @@ h3 {
     margin-right: 35px;
 }
 
-.pfp1 {
+.pfp1{
     width: 5%;
     min-height: 75%;
 }
 
+.pfp2 {
+    width: 10%;
+    max-height: 75%;
+}
+
 .logo {
     width: 20%;
+}
+
+.profilecontainer, .btncontainer {
+    display: flex;
+    width: 50%;
+    min-height: 100%;
+    padding: 0 0.75rem;
+}
+
+.btncontainer {
+    align-items: center;
+    justify-content: space-around;
+    padding:0 1.5rem 0 8rem;
+}
+
+.btn {
+    color: white;
+    background: #0F8AD8;
+    border: none;
+    border-radius: 2rem;
+    min-width: 25%;
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
 #upper {
@@ -96,5 +129,5 @@ h3 {
     min-width: 55%;
     border-radius: 1rem;
     border: none;
-    margin-right: 135px;
+    margin-right: 100px;
 }
