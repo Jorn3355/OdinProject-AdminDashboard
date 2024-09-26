@@ -52,8 +52,8 @@ span.header {
     font-size: 1.05rem;
 }
 
-.fill {
-    gap: 0;
+.bottomSpace {
+    margin-bottom: 8px;
 }
 
 
@@ -79,6 +79,16 @@ span.header {
     border: none;
 }
 
+.trending-profiles {
+    width: 1rem;
+}
+
+.trending {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 8px 0 #00000044;
+}
+
 
 
 .profileText {
@@ -96,6 +106,21 @@ span.header {
 
 .emptyspace {
     margin-bottom: 3rem;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.profile-pictures {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pictures > p {
+    font-size: 1rem;
 }
 
 .wrapper {
